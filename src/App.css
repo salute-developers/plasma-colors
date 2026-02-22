@@ -1,0 +1,247 @@
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
+  letter-spacing: -0.02em;
+}
+
+.header p {
+  margin: 0;
+  color: #5c5c5c;
+  font-size: 0.95rem;
+}
+
+.custom-section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  border: 1px solid #e8e8e8;
+}
+
+.custom-section h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.mode-switcher {
+  margin-bottom: 1rem;
+}
+
+.mode-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #555;
+  margin-right: 0.75rem;
+}
+
+.mode-options {
+  display: inline-flex;
+  gap: 1rem;
+  margin-top: 0.35rem;
+}
+
+.mode-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.mode-option input {
+  accent-color: #118CDF;
+}
+
+.mode-hint {
+  margin: 0.35rem 0 0 0;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.input-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.input-row input {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.6rem 0.85rem;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+.input-row input:focus {
+  outline: none;
+  border-color: #118CDF;
+  box-shadow: 0 0 0 2px rgba(17, 140, 223, 0.2);
+}
+
+.input-row input::placeholder {
+  color: #999;
+}
+
+.preview-swatch {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.12);
+  flex-shrink: 0;
+}
+
+.recommendations {
+  margin-top: 1.25rem;
+}
+
+.recommendations h3 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem 0;
+  color: #555;
+}
+
+.recommendation-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.recommendation-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  background: #f5f5f5;
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.recommendation-item:hover {
+  background: #ebebeb;
+  border-color: #ddd;
+}
+
+.recommendation-swatch {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+.recommendation-info {
+  font-size: 0.8rem;
+  color: #444;
+}
+
+.recommendation-info .name {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.recommendation-info .hex {
+  font-family: ui-monospace, monospace;
+  color: #666;
+}
+
+.palette-section-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.palette-section-header h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+}
+
+.palette-source-switcher {
+  display: inline-flex;
+  gap: 1rem;
+}
+
+.palette-section h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.palette-families {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.palette-family {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  border: 1px solid #e8e8e8;
+}
+
+.palette-family-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 0.6rem;
+  color: #444;
+}
+
+.palette-shades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.palette-swatch {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  border: 1px solid rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.12s, box-shadow 0.12s;
+}
+
+.palette-swatch:hover {
+  transform: scale(1.08);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.palette-swatch.selected {
+  box-shadow: 0 0 0 2px #118CDF;
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.error-msg {
+  font-size: 0.85rem;
+  color: #c4272a;
+  margin-top: 0.5rem;
+}
